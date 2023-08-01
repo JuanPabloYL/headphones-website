@@ -1,0 +1,41 @@
+:root {
+  /* Fonts */
+  --fontFamily: "Roboto", sans-serif;
+
+  /* Colors */
+  --primaryColor: #1075b8;
+  --secondaryColor: #06b17e;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* Convert px to rems */
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--fontFamily);
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-family: 3.6rem;
+}
+
+h2 {
+  font-size: 3.4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+.container {
+  width: min(95%, 120rem);
+  margin-inline: auto;
+}
