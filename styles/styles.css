@@ -53,6 +53,16 @@ img {
   margin-top: 5rem;
 }
 
+.linear-gradient {
+  background-image: linear-gradient(
+    to right,
+    var(--primaryColor) 0%,
+    var(--secondaryColor) 50%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
 /* Header */
 .header {
   background-color: var(--grayDark);
@@ -197,3 +207,5 @@ img {
     padding: 5rem;
   }
 }
+
+/* Products */
