@@ -6,6 +6,7 @@
   --primaryColor: #1075b8;
   --secondaryColor: #06b17e;
   --grayDark: #1f1f1f;
+  --lightGray: #dee2e6;
   --white: #fff;
   --black: #000;
 }
@@ -79,6 +80,7 @@ img {
 .header-info {
   text-align: center;
   font-size: 1.8rem;
+  padding-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -116,7 +118,6 @@ img {
 
 .header-price span {
   font-size: 6rem;
-  margin-bottom: 3rem;
 }
 
 /* Product Features */
@@ -181,7 +182,7 @@ img {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .about {
     background-position:
       center,
@@ -209,3 +210,94 @@ img {
 }
 
 /* Products */
+
+.products-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+.product {
+  background-color: var(--lightGray);
+  border-radius: 1rem;
+  color: var(--primaryColor);
+  margin-bottom: 2rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-repeat: no-repeat;
+  background-position: 20rem 1rem;
+  background-size: 14rem;
+
+  transition-property: transform background-size;
+  transition-duration: 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.1);
+  background-size: 30rem;
+}
+
+@media (min-width: 768px) {
+  .product {
+    background-position: 90% center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product {
+    margin-bottom: 0;
+  }
+}
+
+.product p {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.products h2 {
+  font-size: 6rem;
+  text-align: center;
+}
+
+.product h3 {
+  margin-bottom: 0;
+}
+
+.product-x {
+  background-image: url(../img/modelo-x.svg);
+}
+
+.product-y {
+  background-image: url(../img/modelo-y.svg);
+}
+
+.product-z {
+  background-image: url(../img/modelo-z.svg);
+  background-color: var(--primaryColor);
+  color: var(--white);
+}
+
+@media (min-width: 768px) {
+  .product-z {
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+  }
+}
+@media (min-width: 1024px) {
+  .product-z {
+    background-size: 25rem;
+    background-position: 27rem center;
+  }
+}
