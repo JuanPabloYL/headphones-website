@@ -154,9 +154,46 @@ img {
   padding-block: 3rem;
 }
 
+@media (min-width: 768px) {
+  .about {
+    grid-template-rows: unset;
+    grid-template-columns: repeat(2, 1fr);
+
+    background-image: linear-gradient(
+        to right,
+        var(--primaryColor) 50%,
+        transparent 50%
+      ),
+      url(../img/imagen-mujer.avif);
+    background-position:
+      center,
+      -40rem -20rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    background-position:
+      center,
+      33rem -21rem;
+  }
+}
+
 .about-content {
   color: var(--white);
   grid-row: 2 / -1;
   line-height: 2;
   font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    grid-column: 1/ 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    padding: 5rem;
+  }
 }
