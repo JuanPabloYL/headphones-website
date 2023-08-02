@@ -5,6 +5,9 @@
   /* Colors */
   --primaryColor: #1075b8;
   --secondaryColor: #06b17e;
+  --grayDark: #1f1f1f;
+  --white: #fff;
+  --black: #000;
 }
 
 html {
@@ -35,7 +38,67 @@ h3 {
   font-size: 3.2rem;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .container {
   width: min(95%, 120rem);
   margin-inline: auto;
+}
+
+/* Header */
+.header {
+  background-color: var(--grayDark);
+  color: var(--white);
+}
+
+@media (min-width: 768px) {
+  .header-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.header-info {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  .header-info {
+    text-align: left;
+  }
+}
+
+.header-p {
+  font-size: 3rem;
+}
+
+.heading {
+  font-size: 5.6rem;
+  background-image: linear-gradient(
+    to right,
+    var(--primaryColor) 0%,
+    var(--secondaryColor) 50%
+  );
+  background-clip: text;
+  color: transparent;
+  margin-block: 5rem;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 10rem;
+    margin-block: 2rem;
+  }
+}
+
+.header-description {
+  line-height: 1.5;
+}
+
+.header-price span {
+  font-size: 6rem;
 }
