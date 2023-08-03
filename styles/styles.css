@@ -301,3 +301,19 @@ img {
     background-position: 27rem center;
   }
 }
+
+/* Updates */
+.updates {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--white) 50%
+    ),
+    url(../img/newsletter.jpg);
+}
+
+.updates-container {
+  grid-row: 2 / -1;
+}
