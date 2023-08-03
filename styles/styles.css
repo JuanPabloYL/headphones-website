@@ -374,3 +374,12 @@ input[type="submit"] {
 input[type="submit"]:hover {
   cursor: pointer;
 }
+
+/* footer */
+.footer {
+  text-align: center;
+  color: var(--primaryColor);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 900;
+}
